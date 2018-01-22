@@ -7,8 +7,6 @@ class Meta(type):
 class Base(metaclass=Meta):
     subclass = []
 
-    def __new__(cls, *args, **kwargs):
-        return super().__new__(cls, *args, **kwargs)
 
     def __init__(self):
         self.count = 0
